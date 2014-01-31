@@ -109,13 +109,19 @@ body {
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
-    color: #000;
+    /*color: #000;*/
+color: #646f76;
 }
 
 h1, h2, h3, h4 {
     font-weight: normal;
     margin: 0 0 1em;
     padding: 0;
+/*color: #444;*/
+/*color: #434b50;*/
+color: #3a4145;
+/*color: #353b3f;*/
+/*color: #30363a;*/
 }
 
 h3 {
