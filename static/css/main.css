@@ -118,6 +118,11 @@ h1, h2, h3, h4 {
     padding: 0;
 }
 
+h3 {
+    font-size: 26px;
+    font-family: ProximaNovaSemiBold;
+}
+
 /** Header **/
 #header {
     position: fixed;
@@ -263,12 +268,72 @@ h1 {
 
 
 
+/** overview **/
 
+#overview {
+    background: #fff;
+    padding: 100px 0 25px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
 
+#overview .top {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    /*background: url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/website/white-wave-top-df7e8d4ecf52310c0452ae04aa5aaf80.png);*/
+    /*background: url(/static/img/white-wave-top-df7e8d4ecf52310c0452ae04aa5aaf80.png);*/
+    background-size: auto 10px;
+}
 
+/*.inner {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+    overflow: hidden;
+    position: relative;
+}*/
 
+#overview ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
 
+#overview ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    font-size: 18px;
+    margin-bottom: 75px;
+}
 
+#overview ul>li {
+    margin: 0;
+    padding: 0;
+}
+
+#overview .icon {
+    height: 195px;
+}
+
+#overview p {
+    margin: 0 15px;
+}
+
+#overview .bottom {
+position: absolute;
+bottom: -10px;
+left: 0;
+right: 0;
+height: 10px;
+/*background: url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/website/white-wave-bottom-bf6c9380619c410c03a60f9b40eabebd.png);*/
+background-size: auto 10px;
+}
 
 
 
