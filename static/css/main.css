@@ -158,22 +158,22 @@ h3 {
     text-indent: -9999px;
 }
 
-.nav {
+#nav {
     list-style: none;
     /*margin: 0;*/
     padding: 0;
     float: right;
 }
 
-.nav li {
+#nav li {
     float: left;
 }
 
-.nav>li {
+#nav>li {
     margin: 0;
     padding: 0;
 }
-.nav a {
+#nav a {
     float: left;
     padding: 15px 18px;
     /*color: #7d7d7d;*/
@@ -185,10 +185,10 @@ a {
     text-decoration: none;
 }
 a:focus{outline:none;border:none}
-.nav .launch {
+#nav .launch {
     margin-left: 18px;
 }
-a.launch {
+#nav a.launch {
     display: inline-block;
     /*background: #28d7bd;*/
     background: rgb(255,204,0);
@@ -200,8 +200,8 @@ a.launch {
     white-space: nowrap;
     transition: .2s;
 }
-.nav a:hover,.nav a:focus{color:#fc0;}
-a.launch:hover{color:#646f76;}
+#nav a:hover,.nav a:focus{color:#fc0;}
+#nav a.launch:hover{color:#646f76;} /*gris*/
 
 /** Hero **/
 
