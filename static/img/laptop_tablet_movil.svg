@@ -11,12 +11,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="454.39999"
-   height="233.89999"
+   width="454.34656"
+   height="233.81598"
    id="svg3071"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="laptop_tablet_Movil-3.svg">
+   sodipodi:docname="laptop_tablet_movil.svg">
   <defs
      id="defs3073">
     <clipPath
@@ -199,8 +199,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="350"
-     inkscape:cy="203.68378"
+     inkscape:cx="350.21161"
+     inkscape:cy="203.86731"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -208,7 +208,11 @@
      inkscape:window-height="823"
      inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata3076">
     <rdf:RDF>
@@ -217,7 +221,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -225,7 +229,7 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-818.4622)">
+     transform="translate(0.211606,-818.72974)">
     <g
        transform="translate(118.88942,1274.1656)"
        id="g4333">
