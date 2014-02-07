@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 import web
+import urls
+import view
 
-urls = (
-    "/", "Home",
-)
 
-app = web.application(urls, globals())
+app = web.application(urls.urls, globals())
 
-render = web.template.render("templates/")
+app.notfound = view.notfound
+
 
 class Home:
     def GET(self):
-        return render.index()
+        return view.index()
 
 
 # Quitar en producción

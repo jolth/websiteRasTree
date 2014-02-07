@@ -341,7 +341,17 @@ height: 10px;
 background-size: auto 10px;
 }
 
+/** features **/
 
+#features {
+padding: 100px 0;
+font-size: 16px;
+}
+
+h2 {
+font-size: 48px;
+text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
