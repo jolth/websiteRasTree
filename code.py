@@ -4,6 +4,8 @@ import urls
 import view
 
 
+web.config.debug = True # False # Producción
+
 app = web.application(urls.urls, globals())
 
 app.notfound = view.notfound
