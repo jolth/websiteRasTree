@@ -1,9 +1,9 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+ * Jorge A. Toro
+ * @jolthgs
+ * © 2014 Dev Microsystem S.A.S.
  */
 
 /* ==========================================================================
@@ -97,31 +97,44 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@font-face{font-family:"ProximaNova";src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-regular-webfont-1a245543c0e5837c41a53c5f4a2a144c.eot);src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-regular-webfont.eot?#iefix) format("embedded-opentype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-regular-webfont-b4b99eaa198640942390bf472c3411bc.woff) format("woff"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-regular-webfont-7d05ec1d6fce0ca49ed0fee2af19fb25.ttf) format("truetype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-regular-webfont.svg#ProximaNova) format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:"ProximaNovaLight";src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-light-webfont-9b66c6b0cdeb7bc17820d8ee425a80ae.eot);src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-light-webfont.eot?#iefix) format("embedded-opentype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-light-webfont-9ce05fd638579e7bb6d277ddbfe36ac8.woff) format("woff"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-light-webfont-9097d8ef2cfba0c7baea7c3f20dd70ef.ttf) format("truetype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-light-webfont.svg#ProximaNovaLight) format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:"ProximaNovaSemiBold";src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-semibold-webfont-7b8e295eb34ec7334e6ee581207b735d.eot);src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-semibold-webfont.eot?#iefix) format("embedded-opentype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-semibold-webfont-cd7ad6de0a11f4ccc264ac0043d94a13.woff) format("woff"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-semibold-webfont-03fc71e3999b8b01f4b6a3c087268dc6.ttf) format("truetype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/proximanova-semibold-webfont.svg#ProximaNovaSemiBold) format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:"RobotoMedium";src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/Roboto-Medium-webfont-ad42e36bb33bbf4832ab19eb415521be.eot);src:url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/Roboto-Medium-webfont.eot?#iefix) format("embedded-opentype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/Roboto-Medium-webfont-7c6cea4d6390955e495a2dea554292d1.woff) format("woff"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/Roboto-Medium-webfont-de8feae74fd427246330fed49f891ac3.ttf) format("truetype"),url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/Roboto-Medium-webfont.svg#RobotoMedium) format("svg");font-weight:normal;font-style:normal}
 
-
 body {
     font: 17px/1.2 ProximaNovaLight;
-    /*font: 17px/1.2 sans-serif;*/
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
-    /*color: #000;*/
-color: #646f76;
+	color: #646f76;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus{
+	outline:none;border:none
 }
 
 h1, h2, h3, h4 {
     font-weight: normal;
     margin: 0 0 1em;
     padding: 0;
-/*color: #444;*/
-/*color: #434b50;*/
-color: #3a4145;
-/*color: #353b3f;*/
-/*color: #30363a;*/
+	color: #3a4145;
+}
+
+h1 {
+    font-size: 62px;
+    color: #fc0;
+    line-height: 1;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    width: 570px;
+}
+
+h2 {
+	font-size: 48px;
+	text-align: center;
 }
 
 h3 {
@@ -129,7 +142,9 @@ h3 {
     font-family: ProximaNovaSemiBold;
 }
 
+
 /** Header **/
+
 #header {
     position: fixed;
     background: rgba(255,255,255,0.9);
@@ -137,7 +152,6 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    /*padding: 27px 0;*/
     padding: 5px 0 0;
 }
 
@@ -160,7 +174,6 @@ h3 {
 
 #nav {
     list-style: none;
-    /*margin: 0;*/
     padding: 0;
     float: right;
 }
@@ -176,21 +189,17 @@ h3 {
 #nav a {
     float: left;
     padding: 15px 18px;
-    /*color: #7d7d7d;*/
     color: #646f76;
     line-height: 1;
     transition: .2s;
 }
-a {
-    text-decoration: none;
-}
-a:focus{outline:none;border:none}
+
 #nav .launch {
     margin-left: 18px;
 }
+
 #nav a.launch {
     display: inline-block;
-    /*background: #28d7bd;*/
     background: rgb(255,204,0);
     padding: 15px 18px;
     color: #fff;
@@ -200,13 +209,37 @@ a:focus{outline:none;border:none}
     white-space: nowrap;
     transition: .2s;
 }
-#nav a:hover,.nav a:focus{color:#fc0;}
-#nav a.launch:hover{color:#646f76;} /*gris*/
+
+#nav a:hover, .nav a:focus{
+	color: #fc0;
+}
+
+#nav a.launch:hover{
+	color: #646f76;
+}
+
 
 /** Hero **/
 
+#hero {
+    margin-top: 88px;
+    position: relative;
+}
+
+#hero .inner {
+    height: 575px;
+    padding-top: 100px;
+    z-index:3;
+}
+
+#hero img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 30px;
+}
+
 #map-canvas, #map_canvas {
-    /*height: 100%;*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -214,6 +247,7 @@ a:focus{outline:none;border:none}
     left: 0;
     z-index: 1;
 }
+
 #mapOverlay {
     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
@@ -229,49 +263,6 @@ a:focus{outline:none;border:none}
     left: 0;
     z-index: 2;
 }
-/*#mapOverlay {
-      background:#fffff1;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      opacity: 0.5;
-      filter:alpha(opacity=50);
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-}*/
-
-#hero {
-    /*margin-top: 110px;*/
-    margin-top: 88px;
-    /*background: url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/website/header-9f0077381ed3b8f117f4fdf683c2965c.jpg) no-repeat 50% 0;*/
-    /*background: url(/static/img/map.png) no-repeat 50% 0;
-    background-size: cover;*/
-    position: relative;
-}
-#hero .inner {
-    /*height: 506px;*/
-    height: 575px;
-    padding-top: 100px;
-    z-index:3;
-}
-h1 {
-    font-size: 62px;
-    /*color: #fff;*/
-    color: #fc0;
-    /*color: #646f76;*/
-    line-height: 1;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    width: 570px;
-}
-#hero img {
-    position: absolute;
-    z-index: 1;
-    bottom: 0px;
-    right: 30px;
-}
-
 
 
 /** overview **/
@@ -290,18 +281,8 @@ h1 {
     left: 0;
     right: 0;
     height: 10px;
-    /*background: url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/website/white-wave-top-df7e8d4ecf52310c0452ae04aa5aaf80.png);*/
-    /*background: url(/static/img/white-wave-top-df7e8d4ecf52310c0452ae04aa5aaf80.png);*/
     background-size: auto 10px;
 }
-
-/*.inner {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 30px;
-    overflow: hidden;
-    position: relative;
-}*/
 
 #overview ul {
     list-style: none;
@@ -332,14 +313,16 @@ h1 {
 }
 
 #overview .bottom {
-position: absolute;
-bottom: -10px;
-left: 0;
-right: 0;
-height: 10px;
-/*background: url(https://d1sxz8h7k5u0wb.cloudfront.net/assets/website/white-wave-bottom-bf6c9380619c410c03a60f9b40eabebd.png);*/
-background-size: auto 10px;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background-size: auto 10px;
 }
+
+
+
 
 /** features **/
 
@@ -349,198 +332,20 @@ background-size: auto 10px;
 	background-color: rgb(255, 204, 0);
 }
 
-h2 {
-	font-size: 48px;
-	text-align: center;
-}
+
+
 
 
 /* ==========================================================================
-   Helper classes
+   Media Queries for Responsive Design.
    ========================================================================== */
 
-/*
- * Image replacement
- */
+@media only screen and (max-width : 480px) {
+	
+	#nav a {
+	    color: green;
+ 	}
 
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
